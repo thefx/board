@@ -15,6 +15,7 @@
                 <td>{{@item.text}}</td>
                 <td>
                     <form action="" method="POST">
+                        <a href="/admin/edit?id={{@item.record_id}}" class="btn btn-info btn-xs">Редактировать</a>
                         <button  class="btn btn-danger btn-xs" name="delRecord" value="{{@item.record_id}}">Удалить задачу</button>
                     </form>
                 </td>
