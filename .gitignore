@@ -1,0 +1,7 @@
+/.idea/*
+
+*.zip
+*.rar
+Apache-2.2_vhost.conf
+
+/tmp/*.php

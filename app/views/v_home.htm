@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Добавить запись</div>
+    <div class="panel-body">
+        <form class="form-horizontal form-label-left" action="" method="post" enctype="multipart/form-data" >
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2 col-md-2">Название</label>
+                <div class="col-xs-12 col-sm-10 col-md-10">
+                    <input type="text" class="form-control" placeholder="" name="name" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2 col-md-2">Текст</label>
+                <div class="col-xs-12 col-sm-10 col-md-10">
+                    <input type="text" class="form-control" placeholder="" name="text" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-10 col-md-10 col-md-offset-2">
+                    <button name="save" type="submit" class="btn btn-success">Сохранить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Все записи</div>
+    <ul class="list-group">
+        <repeat group="{{ @records }}" value="{{ @item }}" counter="{{ @counter }}">
+            <li class="list-group-item">
+                <h3>{{@item.name}}</h3>
+                <div>{{@item.text}}</div>
+            </li>
+        </repeat>
+    </ul>
+</div>
