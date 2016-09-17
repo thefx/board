@@ -2,6 +2,6 @@
 
 *.zip
 *.rar
-Apache-2.2_vhost.conf
+*_vhost.conf
 
 /tmp/*.php
